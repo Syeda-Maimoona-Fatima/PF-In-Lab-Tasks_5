@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() 
+{
+    int age;
+    float marks;
+    printf("Enter age");
+    scanf("%d", &age);
+    printf("Enter marks");
+    scanf("%f", &marks);
+    if (age>=18)
+    {
+        if (marks>=50)
+        {
+            printf("Eligible for admission");
+        }else
+        {
+            printf("Not enough marks-NOT eligible");
+        }
+    }else
+    {
+        printf("Age requirement not met-NOT eligible");
+    }
+
+    return 0;
+}
