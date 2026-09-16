@@ -1,0 +1,72 @@
+#include <stdio.h>
+
+int main() 
+{
+    int department, section;
+    printf("Select department (1 =Computer Science, 2 =Information Technology, 3 =Artificial Intelligence)");
+    scanf("%d", &department);
+
+    switch (department) 
+    {
+        case 1:
+            printf("Select Section (1= Section A, 2= Section B): ");
+            scanf("%d", &section);
+
+            switch (section) 
+            {
+                case 1:
+                    printf("Selected department is Computer Science");
+                    printf("\nSelected section is A");
+                    break;
+                case 2:
+                    printf("Selected department is Computer Science");
+                    printf("\nSelected section is B");
+                    break;
+                default:
+                    printf("Selection choice- Invalid");
+            }
+            break;
+        case 2:
+            printf("Select Section (1= Section A, 2= Section B): ");
+            scanf("%d", &section);
+
+            switch (section) 
+            {
+                case 1:
+                    printf("Selected department is Information Technology");
+                    printf("\nSelected section is A");
+                    break;
+                case 2:
+                    printf("Selected department is Information Technology");
+                    printf("\nSelected section is B");
+                    break;
+                default:
+                    printf("Selection choice- Invalid");
+            }
+            break;
+
+        case 3:
+            printf("Select Section (1= Section A, 2= Section B): ");
+            scanf("%d", &section);
+
+            switch (section) 
+            {
+                case 1:
+                    printf("Selected department is Artificial Intelligence");
+                    printf("\nSelected section is A");
+                    break;
+                case 2:
+                    printf("Selected department is Artificial Intelligence");
+                    printf("\nSelected section is B");
+                    break;
+                default:
+                    printf("Selection choice- Invalid");
+            }
+            break;
+
+        default:
+            printf("Department choice-Invalid");
+    }
+
+    return 0;
+}
